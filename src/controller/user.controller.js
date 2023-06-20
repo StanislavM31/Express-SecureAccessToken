@@ -1,6 +1,6 @@
 const express = require('express');
 const route = express.Router();
-const {createUser} = require("../service/user.service")
+const {createUser, authorizationUser} = require("../service/user.service")
 
 
 route.post('/reg', async(req,res)=>{
